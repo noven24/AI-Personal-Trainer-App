@@ -42,9 +42,9 @@ const CustomBottomTabBar = ({ state, descriptors, navigation }) => {
               style={styles.middleTabButton}
             >
               <View style={styles.middleTabInner}>
-                <Ionicons name="people" size={26} color="#FFFFFF" />
+                <Ionicons name="chatbubbles" size={26} color="#FFFFFF" />
                 <Text style={styles.middleTabText} numberOfLines={2}>
-                  Gym &{'\n'}Komunitas
+                  Konsultasi{'\n'}AI
                 </Text>
               </View>
             </TouchableOpacity>
@@ -55,7 +55,8 @@ const CustomBottomTabBar = ({ state, descriptors, navigation }) => {
         let iconName = 'ellipse';
         if (index === 0) iconName = isFocused ? 'home' : 'home-outline';
         if (index === 1) iconName = isFocused ? 'speedometer' : 'speedometer-outline';
-        if (index === 3) iconName = isFocused ? 'person' : 'person-outline';
+        if (index === 3) iconName = isFocused ? 'people' : 'people-outline';
+        if (index === 4) iconName = isFocused ? 'person' : 'person-outline';
 
         // Warna text & icon aktif=Oranye, tidak aktif=Abu-abu
         const color = isFocused ? COLORS.secondary : '#A0A0A0';

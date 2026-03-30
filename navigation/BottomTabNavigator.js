@@ -18,7 +18,6 @@ const Stack = createStackNavigator();
 const HomeStack = () => (
   <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="HomeMain" component={HomeScreen} />
-    <Stack.Screen name="AITrainer" component={AITrainerScreen} />
     <Stack.Screen name="VideoPlayer" component={VideoPlayerScreen} />
   </Stack.Navigator>
 );
@@ -38,6 +37,7 @@ const BottomTabNavigator = ({ onLogout }) => {
     >
       <Tab.Screen name="Home" component={HomeStack} />
       <Tab.Screen name="Workout" component={WorkoutScreen} />
+      <Tab.Screen name="AITrainer" component={AITrainerScreen} />
       <Tab.Screen name="GymCommunity" component={GymCommunityStack} />
       <Tab.Screen
         name="Profile"
